@@ -1,6 +1,5 @@
 module Api
-  class UsersController < ApplicationController
-    
+  class UsersController < BaseController
     def create
     
     end

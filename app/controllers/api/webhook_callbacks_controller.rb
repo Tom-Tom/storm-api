@@ -1,7 +1,7 @@
 module Api
-  class WebhookCallbacksController < ApplicationController
-    skip_before_action :verify_authenticity_token
-
+  class WebhookCallbacksController < BaseController
+    skip_before_action :very_small_auth
+    
     def hubspot_callback
       data = params["json"]
       puts data

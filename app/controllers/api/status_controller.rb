@@ -1,7 +1,7 @@
 module Api
-  class StatusController < ApplicationController
-    skip_before_action :verify_authenticity_token
-  
+  class StatusController < BaseController
+    skip_before_action :very_small_auth
+
     def index
       render json: {
         data: {
