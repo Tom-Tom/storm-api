@@ -16,17 +16,23 @@ Création d'une route d'API, permettant dans un premier temps de sauvegarder un 
 - [Sidekiq](https://github.com/mperham/sidekiq)
 - [Rspec](https://github.com/rspec/rspec-rails)
 
- 
+---
+
 ## Work organisation
-* Hubspot understanding
+1. Hubspot understanding
 	* Get [Hubspot API KEY](https://app.hubspot.com/hapikeys)
 	* Find [create method](https://developers.hubspot.com/docs/methods/contacts/create_or_update)
 	
-* Storm API
+2. Storm API
 	* Very small authentification
 	* No authentification for `/status`
 	* Create user (with sidekiq worker on Hubspot creation)
 	* [List Hubspot Users](https://developers.hubspot.com/docs/methods/contacts/get_contacts)
+	
+3. Documentation
+	* Describe every unclear part
+	* Describe top class
+	* Describe every method throwing errors
 
 ## How to
 
